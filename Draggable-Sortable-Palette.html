@@ -9,14 +9,15 @@
     {list-style: none;}
 
     .outer {
-        width: 60%;
-}
+        width: 200px;
+    }
     #palette
     {
         display: block;
         width: 114px;
         margin: 5px;
 
+        /*position: absolute;*/
         float:right;clear:none;
 
         background: yellow;
@@ -24,12 +25,12 @@
 
     .box
     {
-        display:block;
-        width: 114px;
+        Zdisplay:block;
+        Zwidth: 114px;
         min-height: 5em;
         margin: 5px;
 
-        float: left; clear:none;
+        /*float: left; clear:none;*/
 
         background:silver;
     }
@@ -37,14 +38,14 @@
     .box li,#palette li
     {
         display: block;
-        width: 64px;
-        height: 32px;
+        Zwidth: 64px;
+        Zheight: 32px;
         margin: 2px;
 
         /*float: left; clear:none;*/
         font-weight:bold;
-        text-align: center;
-        ZZborder: solid 1px black;
+        Ztext-align: center;
+        Zborder: solid 1px black;
     }
 
 
@@ -88,27 +89,42 @@
 </script>
 
 <body>
+    <ul id="palette">
+        <li>P</li>
+        <li>A</li>
+        <li>L</li>
+        <li>E</li>
+        <li>T</li>
+        <li>T</li>
+        <li>E</li>
+    </ul>
     <div class="outer">
-        <ul id="palette" class="ui-sortable">
-            <li>P</li>
-            <li>A</li>
-            <li>L</li>
-            <li>E</li>
-            <li>T</li>
-            <li>T</li>
-            <li>E</li>
-        </ul>
 
-        <ol id="box1" class="ui-sortable box">
+        <ol id="box1" class="box">
             <li>A</li>
             <li>B</li>
         </ol>
 
-        <ol id="box2" class="ui-sortable box">
+        <ol id="box2" class="box">
         </ol>
 
-        <ol id="box3" class="ui-sortable box">
+        <ol id="box3" class="box">
             <li>C</li>
+        </ol>
+        <br />
+        <ol id="box4" class="box">
+            <li>N</li>
+            <li>E</li>
+            <li>S</li>
+            <li>T</li>
+            <ol id="box5" class="box">
+                <li>L</li>
+                <li>I</li>
+                <li>S</li>
+                <li>T</li>
+            </ol>
+            <li>E</li>
+            <li>D</li>
         </ol>
     </div>
     <br class="break"/>
