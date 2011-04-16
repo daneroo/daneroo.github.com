@@ -1,0 +1,21 @@
+title: "One Hundred Hellos"
+url: "http://daneroo.github.com"
+#url: "http://localhost:4000"
+author: "Daniel Lauzon"
+email: "daniel.lauzon@gmail.com"
+description: "The personal blog of Daniel Lauzon."
+
+auto: false
+source: .
+paginate: 5
+paginate_files:
+ - index.html
+
+permalink: /:year/:month/:title
+
+markdown: rdiscount
+pygments: true
+
+exclude:
+  - README.md
+  - _drafts
