@@ -15,6 +15,7 @@ This site site was forked/cloned/copied/modified from [TJ Steins's site](http://
 
 *   index.html
 *   Remove all TJStein refs
+*   cleanup/rm images
 *   check Rake tasks - remove backup
 *   <strike>get a favicon.ico</strike>
 *   Remove unwanted JS (/js/highlight, /languages)
