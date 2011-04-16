@@ -22,6 +22,7 @@ This site site was forked/cloned/copied/modified from [TJ Steins's site](http://
 *   robots.txt
 *   sitemap.xml (+gogle ping)
 *   daniel-lauzon.com: CNAME
+*   replace disqus/goggle analytics
 
 ### Install requirements:
 
