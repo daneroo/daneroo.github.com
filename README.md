@@ -28,7 +28,7 @@ python for syntax highlighting
 
     easy_install Pygments
 
-In your `_config.yml` file put the following so you don’t have to specify the flag:
+In your `_config.yml` file put the following so you don’t have to specify the flag: `--pygments`
 
     pygments: true
 
