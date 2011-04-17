@@ -10,6 +10,12 @@ layout: nil
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>{{ site.url }}/blog.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>{{ site.url }}/archives.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>daily</changefreq>
@@ -17,12 +23,6 @@ layout: nil
   </url>
   <url>
     <loc>{{ site.url }}/about.html</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/links.html</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
