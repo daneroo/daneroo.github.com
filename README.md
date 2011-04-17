@@ -13,17 +13,17 @@ This site site was forked/cloned/copied/modified from [TJ Steins's site](http://
 
 ### TODO
 
-*   index.html
-*   Remove all TJStein refs
+*   Remove all TJStein refs (blog/about/links...)
+*   replace disqus/goggle analytics
 *   cleanup/rm images
 *   check Rake tasks - remove backup
-*   <strike>get a favicon.ico</strike>
 *   Remove unwanted JS (/js/highlight, /languages)
 *   Rakefile
 *   robots.txt
 *   sitemap.xml (+gogle ping)
 *   daniel-lauzon.com: CNAME
-*   replace disqus/goggle analytics
+*   <strike>landing page</strike>
+*   <strike>get a favicon.ico</strike>
 
 ### Install requirements:
 
