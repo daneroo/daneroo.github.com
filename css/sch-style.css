@@ -65,7 +65,7 @@ a:hover {
 }
 
 #inner {
-  width: 690px;
+  width: 400px;
   margin: 50px auto;
   position: relative;
 }
@@ -89,10 +89,16 @@ a:hover {
   z-index: 1;
 }
 
-
+#homepage .description {
+  color: #ccc;
+  font-weight: bold; 
+  margin-top:16px;
+}
 #homepage #inner {
-  margin: 100px auto;
-  position: relative;
+  margin: 10px auto;
+  position: absolute;
+  top: 40px;
+  left:25px;
 }
 
 #homepage #wrapper { background: none; }
@@ -104,7 +110,7 @@ a:hover {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  width: 500px;
+  width: 350px;
   text-shadow: 0 1px 0 #444;
   background: none;
   background-color: rgba(0,0,0,0.70);
@@ -121,7 +127,7 @@ a:hover {
 }
 
 #homepage h2 {
-  font-size: 120px;
+  font-size: 80px;
   color: #fff;
   text-shadow: 0 4px 0 #444;
   margin: 10px 0;
@@ -139,7 +145,7 @@ a:hover {
 #homepage ul {
   float: left;
   display: inline;
-  margin: 40px 40px;
+  margin: 30px 30px;
 }
 
 #homepage li {
