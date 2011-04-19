@@ -8,7 +8,7 @@ description: "The personal blog of Daniel Lauzon."
 auto: false
 source: .
 paginate: 5
-paginate_file: blog.html
+paginate_file: index.html
 
 permalink: /:year/:month/:title
 
