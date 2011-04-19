@@ -1,0 +1,9 @@
+--- 
+name: transcode-re-encode-mp3-with-lame
+layout: post
+title: transcode re-encode mp3 with lame
+time: 2007-05-13 02:41:00.002000 -04:00
+tags: []
+
+---
+Doin this to shrink collection for Sylvie'e iPod.<br /><br /><span style="font-size:85%;"><span style="font-weight: bold;font-family:courier new;" >yum install lame</span><br /><span style="font-weight: bold;font-family:courier new;" > yum install id3lib</span><br /><br /># make parallel directory structure<br /><span style="font-weight: bold;font-family:courier new;" > find -type d -exec mkdir ../mp3_128/{} \;</span><br /><span style="font-weight: bold;font-family:courier new;" ># do actual transcoding<br />find -type f -name \*mp3 -exec </span><span id="mail-highlight-id" style=";font-family:courier new;color:yellow;"  >lame</span><span style="font-weight: bold;font-family:courier new;" > -b 128 --mp3input {} ../mp3_128/{} \; </span><br /><span style="font-weight: bold;font-family:courier new;" > # and now id3cp -1 -2  (necessaru caus lame does not bring over id3 tags</span><br /><span style="font-weight: bold;font-family:courier new;" > find -type f -name \*mp3 -exec </span><span id="mail-highlight-id" style=";font-family:courier new;color:yellow;"  >id3cp</span><span style="font-weight: bold;font-family:courier new;" > -1 -2  {} ../mp3_128/{} \;<br /><br />-=-= dual Core 2 = 4 cores ::<br />To accelerate on dual core 2 machines, manually split into 4(5) source directories, all of which encode to same mp3_128 target dfirectory.<br /></span></span>

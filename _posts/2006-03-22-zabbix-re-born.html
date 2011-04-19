@@ -1,0 +1,9 @@
+--- 
+name: zabbix-re-born
+layout: post
+title: Zabbix re-born
+time: 2006-03-22 10:57:00.002000 -05:00
+tags: []
+
+---
+Put zabbix back on its feet.<br /> -reduce the frequency of polled data<br />    down to 5 minutes ( 15 would break slave rule. )<br /> -add new hosts<br />    viau, wdel, unique (btna)<br /><br />check history  table on zabbix database on rack3:<br /><br />select m.host, count(*) as num from history h left join items i on i.itemid=h.itemid left join hosts m on i.hostid=m.hostid where h.clock>unix_timestamp(now() - INTERVAL 10 minute) group by m.hostid;<br /><br />new infrastructure heatbeat.

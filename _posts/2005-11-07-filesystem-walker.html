@@ -1,0 +1,9 @@
+--- 
+name: filesystem-walker
+layout: post
+title: Filesystem Walker
+time: 2005-11-07 09:50:00.002000 -05:00
+tags: []
+
+---
+Traverse Directory tree advising IFileHandler<br />of each Directory and File that is reached:<br />org.galo.filesystem:<br /><pre><br />public interface IFileHandler {<br />    public void handle(File f);<br />}<br />public class BaseWalker {<br />    public BaseWalker(IFileHandler directoryHandler,<br />                      IFileHandler fileHandler) ;<br />}<br /></pre><br />There are static shortcuts:<br /><pre><br />int DirectoryWalker.count(File baseDir);<br />List DirectoryWalker.list(File baseDir);<br />int FileWalker.count(File baseDir);<br />List DirectoryWalker.list(File baseDir);<br /></pre>

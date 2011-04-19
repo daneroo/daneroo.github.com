@@ -1,0 +1,9 @@
+--- 
+name: ubuntu-debian-package-management
+layout: post
+title: Ubuntu - Debian Package Management
+time: 2008-04-23 12:26:00.003000 -04:00
+tags: []
+
+---
+<span style="font-weight: bold;font-size:130%;" >rpm - dpkg equivalents</span><br /><br /> <span style="font-weight: bold;"> rpm -qa</span>     becomes   <span style="font-weight: bold;">dpkg -l</span><br />  <span style="font-weight: bold;">rpm -qf <filename></span>  becomes <span style="font-weight: bold;"> dpkg -S <filename-or-pattern></span><br />  <span style="font-weight: bold;">rpm -qal</span> becomes <span style="font-weight: bold;">for i in `dpkg-query -W|awk '{print $1}'`; do  dpkg -L $i; done</span>

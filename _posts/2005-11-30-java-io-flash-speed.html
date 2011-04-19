@@ -1,0 +1,9 @@
+--- 
+name: java-io-flash-speed
+layout: post
+title: Java IO Flash Speed
+time: 2005-11-30 00:51:00.002000 -05:00
+tags: []
+
+---
+IO Speed comparison from java:<br />Buffered IOStream - 1k writes.<br />!Saturate file-system cache!<br />write/read 10 Mb (10 *2^20 bytes)<br />to file on HD<br />to file on Flash memory<br /> {Slow, Fast} x {USB1.1 USB 2.0}<br />java : jit, no-jit<br /><br />on boole:<br />/ - md1- raid0<br />  write file of length 100MB at rate 98.911964MB/s (1.012s)<br />  write file of length 1000MB at rate 49.205334MB/s (20.393s)<br />/archive - md2- raid1<br />  write file of length 100MB at rate 94.33963MB/s (1.062s)<br />  write file of length 1000MB at rate 34.31591MB/s (31.023s)<br /><br />Boole: Unix cp - Read + Write<br />time cp coco /archive/coco - 54.452s<br />time cp coco caca 43.439s<br />time cp /archive/coco /archive/caca 53.663s<br />time cp /archive/coco coco 57.503s<br /><br /><br />on euler:<br />  write file of length 1000MB at rate 53.20847MB/s (19.225s)<br />  write file of length 100MB at rate 123.91574MB/s (0.809s)<br /><br />on vik:<br />  write file of length 1000MB at rate 26.901968MB/s (37.172s)<br />  write file of length 100MB at rate 28.8267MB/s (3.469s)<br />  write file of length 100MB at rate 12.260912MB/s (8.156s)

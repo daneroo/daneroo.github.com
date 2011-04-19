@@ -1,0 +1,9 @@
+--- 
+name: yum-refresh-centos4-2
+layout: post
+title: Yum refresh - Centos4.2
+time: 2006-02-01 11:46:00.002000 -05:00
+tags: []
+
+---
+install centos4.2 minimal in vmware<br />mount iso/CentOS-4.2-i386-bin1of4.iso<br />linux askmethod<br />nfs: 192.168.3.200 /archive /archive/iso/centos4-U2-i386/<br /><br />For nagios - <br /> check yum.conf<br /> add dag or freshrpms - to get nagois/nagois plugins<br />dag: dag.repo--------------------------<br />[dag]<br />name=dag<br />baseurl=http://apt.sw.be/redhat/el4/en/i386/dag<br />enabled=1<br />gpgcheck=1<br />------------------------------<br />rpm --import http://dag.wieers.com/packages/RPM-GPG-KEY.dag.txt<br /> yum install nagios nagios-plugins<br /><br />now do this from a mirrored dag/freshrpm ?

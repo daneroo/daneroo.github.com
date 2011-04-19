@@ -1,0 +1,9 @@
+--- 
+name: derby-speed
+layout: post
+title: Derby Speed
+time: 2005-11-30 16:08:00.002000 -05:00
+tags: []
+
+---
+As an extension to the flash memory speed tests,<br /><br />tried inserting records into derby:<br />  CREATE TABLE number (oid INT, PRIMARY KEY(oid));<br />  INSERT INTO number(oid) values(?);<br /><br />oid=1...n<br />database size :<br />1kRecs   :  760kB<br />10kRecs  :  2.4MB<br />100kRecs :  9.4MB<br />1000kRecs: 57.6MB<br /><br />create database and table takes about 2 seconds.<br />  important when number of records is small<br />commit size is main factor.<br /><pre><br />              Without Table creation       With Table Creation<br />    N Recs     Rate             Time         Rate             Time<br />-Commit size 1<br />    1kRecs   351.61743Recs/s  (2.845s)    195.73302Recs/s   (5.109s)<br />   10kRecs   661.682Recs/s   (15.113s)    573.4274Recs/s   (17.439s)<br />-Commit size 10<br />   10kRecs  1623.1132Recs/s   (6.161s)   1094.9304Recs/s    (9.133s)<br />  100kRecs  3172.3877Recs/s  (31.522s)   2956.743Recs/s    (33.821s)<br />-Commit size 100<br />    1kRecs   542.8882Recs/s   (1.842s)    243.13155Recs/s   (4.113s)<br />   10kRecs  2001.2007Recs/s   (4.997s)   1376.652Recs/s     (7.264s)<br />  100kRecs  4766.6714Recs/s  (20.979s)   4247.7275Recs/s   (23.542s)<br />-Commit size 1000<br />    1kRecs  368.86758Recs/s   (2.711s)    149.23146Recs/s   (6.701s)<br />   10kRecs 2046.2451Recs/s    (4.887s)   1395.0892Recs/s    (7.168s)<br />  100kRecs 5414.4785Recs/s   (18.469s)   4817.42Recs/s     (20.758s)<br /> 1000kRecs 6039.4863Recs/s  (165.577s)   5950.5747Recs/s  (168.051s)<br />-Commit size 2000<br /> 1000kRecs 5626.5757Recs/s  (177.728s)   5549.482Recs/s   (180.197s)<br /></pre>

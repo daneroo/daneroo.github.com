@@ -1,0 +1,9 @@
+--- 
+name: iscsi-on-axial-blades-filers
+layout: post
+title: iSCSI on axial blades/filers
+time: 2007-06-29 11:28:00.002000 -04:00
+tags: []
+
+---
+Just added these for autostart..<br /> on filer1: 192.168.3.62:<br /><blockquote>chkconfig --add iscsi-target<br />chkconfig --level 345 iscsi-target on<br />chkconfig --list iscsi-target<br /></blockquote>and on blade02:192.168.3.114 service was aloready set to run..<br /><blockquote>chkconfig --list iscsi<br /></blockquote><br />Just grep'ed history on blade02: 192.168.3.114<br /><blockquote>  iscsiadm -m discovery<br /> iscsiadm -m discovery -p 192.168.3.62<br /> iscsiadm -m discovery -t st -p 192.168.3.62<br /> /etc/init.d/iscsi restart<br /> fdisk -l /dev/sdb<br /> mke2fs /dev/sdb1<br /> /etc/init.d/vmware stop<br /> mv vmware vmware.local.old<br /> time scp -rp  ../../vmware.local.old/Virtual\ Machines/c44-64 .<br /> time scp -rp  ../../vmware.local.old/Virtual\ Machines/w2k3-ent-x64 .<br /> mount /dev/sdb1 /var/lib/vmware<br /> /etc/init.d/vmware start<br /></blockquote> and on filer1: 192.168.3.62<br /><blockquote>/etc/init.d/iscsi-target restart<br />config in /etc/ietd.conf</blockquote>
