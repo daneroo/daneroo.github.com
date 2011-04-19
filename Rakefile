@@ -24,7 +24,7 @@ end
  
 desc 'Start server with --auto'
 task :server => [:clean]  do
-  jekyll('--server --auto')
+  jekyll('--server --auto --url http://localhost:4000')
 end
 
 desc 'Build & Deploy'
