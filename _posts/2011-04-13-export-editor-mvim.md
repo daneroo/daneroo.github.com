@@ -13,7 +13,7 @@ tags: []
 
 [MacVim](http://code.google.com/p/macvim/)
 
-
+[Janus](https://github.com/carlhuda/janus)
 {% highlight bash %}
 $> vimtutor
 {% endhighlight %}
