@@ -16,7 +16,7 @@ task :sitemap do
     require 'net/http'
     require 'uri'
     puts '* Pinging Google about the sitemap'
-    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('http://tjstein.com/sitemap.xml'))
+    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('http://daniel-lauzon.com/sitemap.xml'))
   rescue LoadError
     puts '! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found.'
   end
@@ -24,28 +24,28 @@ end
  
 desc 'Start server with --auto'
 task :server => [:clean]  do
-  jekyll('--server --auto')
+  jekyll('--server --auto --url http://localhost:4000')
 end
 
-desc 'Build & Deploy'
-task :deploy do
-  sh "rsync -rtzh --delete _site/ --rsh='ssh -p43102' deploy@tjstein.com:/var/www/tjstein.com/public"
-end
+#desc 'Build & Deploy'
+#task :deploy do
+#  sh "rsync -rtzh --delete _site/ --rsh='ssh -p43102' deploy@tjstein.com:/var/www/tjstein.com/public"
+#end
 
-desc 'Minify CSS & HTML'
-task :minify do
-  sh 'java -jar ~/.java/yuicompressor-2.4.2.jar --type css css/print.css -o _site/css/print.css'
-  sh 'java -jar ~/.java/yuicompressor-2.4.2.jar --type css css/screen.css -o _site/css/screen.css'
-  sh 'java -jar ~/.java/yuicompressor-2.4.2.jar --type css css/custom.css -o _site/css/custom.css'
-  sh 'java -jar ~/.java/htmlcompressor-0.9.8.jar _site/index.html -o _site/index.html'
-  sh 'java -jar ~/.java/htmlcompressor-0.9.8.jar --type=xml _site/sitemap.xml -o _site/sitemap.xml'
-end
+#desc 'Minify CSS & HTML'
+#task :minify do
+#  sh 'java -jar ~/.java/yuicompressor-2.4.2.jar --type css css/print.css -o _site/css/print.css'
+#  sh 'java -jar ~/.java/yuicompressor-2.4.2.jar --type css css/screen.css -o _site/css/screen.css'
+#  sh 'java -jar ~/.java/yuicompressor-2.4.2.jar --type css css/custom.css -o _site/css/custom.css'
+#  sh 'java -jar ~/.java/htmlcompressor-0.9.8.jar _site/index.html -o _site/index.html'
+#  sh 'java -jar ~/.java/htmlcompressor-0.9.8.jar --type=xml _site/sitemap.xml -o _site/sitemap.xml'
+#end
 
-desc 'Backup to NAS + Amazon S3'
-task :backup do
-  puts '* Backing up to NAS + Amazon S3'
-  puts `./backup.sh`
-end
+#desc 'Backup to NAS + Amazon S3'
+#task :backup do
+#  puts '* Backing up to NAS + Amazon S3'
+#  puts `./backup.sh`
+#end
 
 desc 'Push source code to Github'
 task :push do
