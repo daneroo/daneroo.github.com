@@ -1,0 +1,9 @@
+--- 
+name: nslu2-dl-slug
+layout: post
+title: NSLU2 dl-slug
+time: 2006-08-01 00:35:00.002000 -04:00
+tags: []
+
+---
+After a part swap from linksys, which turned out to be another Power supply failure...<br /><br />Restoring the slug:<br />-confirm working<br />configure : ip 192.168.5.200<br />Server Name dl-slug<br />Workgroup : SOLO<br />Lang Support: Western Europe/Latin-1<br /><br />Before updating to unslung firmware<br />test telnet into redboot as in<br />http://www.nslu2-linux.org/wiki/HowTo/TelnetIntoRedBoot<br />I used the following (Third manual method):<br /> while ! ping -W 1 -c 1 192.168.0.1 2>&1 >/dev/null; do true; done && telnet 192.168.0.1 9000<br /><br />From the readme : Unslung-6.8-beta-README.txt<br />I think It will be better to upgrade to linksys V23R63 first.<br />Having to do with the unslng disk being in USB port1 or port2.<br />And I intend putting the drive in port1.<br />But if I unsling a brand new drive, Then I will do as sugessted and unsling to port2.<br /><br />HOLD EVERYTHING, will redo this as per readme with a brand new drive.....<br /><br />Checksums for reference...<br /><br />-update to latest firmware : NSLU2_V23R63.bin<br />423f65fb2121bbf9855d060dce29b3af  NSLU2_V23R63.zip<br />007fa7a32c20e29411922b41370962c8  NSLU2_V23R63.bin<br />- or unslung <br />b0c1c53c8d707477ac8f14e23f344713  Unslung-6.8-beta-firmware.zip

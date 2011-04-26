@@ -1,0 +1,9 @@
+--- 
+name: convert-flac-to-mp3
+layout: post
+title: convert flac to mp3
+time: 2007-06-16 00:27:00.002000 -04:00
+tags: []
+
+---
+This is the gem that I found:<br /> flac -d -o - "$filename" | lame -b 320 -h - > "${filename:0:${#filename}-5}".mp3<br /><br />So using this trick for filenames with spaces: (<span style="font-weight: bold;">while read</span> does not break on spaces as <span style="font-weight: bold;">for</span> does !)<br /><br />find -type f -name \*flac | while read f; do<br />  echo "-=-= $f =-=-";<br />  flac -d -o - "$f" | lame -b 320 -h - > "${f:0:${#f}-5}".mp3<br />done<br /><br />Don't thimk this will do id3 tags though....Music Brainz...And done

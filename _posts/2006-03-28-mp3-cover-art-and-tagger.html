@@ -1,0 +1,9 @@
+--- 
+name: mp3-cover-art-and-tagger
+layout: post
+title: mp3 cover art and tagger
+time: 2006-03-28 20:33:00.002000 -05:00
+tags: []
+
+---
+<span style="font-weight:bold;">Linux & Windows Tagger</span><br />http://musicbrainz.org/<br /><br /><span style="font-weight:bold;">Cover Art:</span><br />Gotcha covered is for windows,<br /><br />but for linux<br />http://www.victorland.com/slimp3/<br /><br />[root@abel mp3]# perl -MCPAN -e shell<br />cpan> install Image::Info SOAP::Lite<br /><br />[daniel@abel media]$ tar xzvf amazon_image-1.5.4.tar.gz<br />[daniel@abel media]$ cd amazon_image-1.5.4<br />daniel@abel media]$ ./make_cover.pl -p /usr/local/slimserver/ -m /archive/media/mp3/ -i FOlder.jpg<br /> Beyond media wants that name !

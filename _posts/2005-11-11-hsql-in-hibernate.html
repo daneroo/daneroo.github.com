@@ -1,0 +1,9 @@
+--- 
+name: hsql-in-hibernate
+layout: post
+title: Hsql in Hibernate
+time: 2005-11-11 08:49:00.002000 -05:00
+tags: []
+
+---
+For a in-process database to be persisted, must call<br />checkpoint, or shutdown [compact]<br /><br />hibernate.connection.url jdbc:hsqldb:file:test<br /><br />To acces Hsql database:<br />java hsqldb.jar --rcfile sqltool.rc test<br />----- sqltool.rc ----<br /># A personal Filebased Database<br />urlid test<br />url jdbc:hsqldb:file:test<br />username sa<br />password<br />--------------------

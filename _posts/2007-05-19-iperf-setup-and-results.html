@@ -1,0 +1,9 @@
+--- 
+name: iperf-setup-and-results
+layout: post
+title: iperf setup and results
+time: 2007-05-19 01:07:00.002000 -04:00
+tags: []
+
+---
+Link to <span style="font-weight: bold;">iperf</span> home page http://dast.nlanr.net/Projects/Iperf/<br /><ul><li>Linux: download <a href="http://dast.nlanr.net/Projects/Iperf/iperf-1.7.0-linux-2.3.tar.gz">iperf-1.7.0-linux-2.3.tar.gz</a> ; glibc-2.3 executable, untar, and run<br /></li><li>Windows: download <a href="http://dast.nlanr.net/Projects/Iperf/iperf-1.7.0-win32.exe">iperf-1.7.0-win32.exe</a> ; windows self-extracting zip, unzip and run<br /></li></ul><span style=";font-family:courier new;font-size:100%;"  ><span style="font-weight: bold;">Simple:</span><br />Server side: ./iperf -s<br />Client side: ./iperf -c <server-ip><br /><br /><span style="font-weight: bold;">Explicit:</span><br />./iperf -s -P 0 -i 1 -p 5001 -l 8K -f m -t 10</server-ip></span><br /><span style=";font-family:courier new;font-size:100%;"  >./iperf -c <server-ip><br /><br />aria has a linksys EG1032<br />lascala has an onboard NVidia nForce Gbe<br />cantor has a Trendnet TEG-PCITXR (RTL-8169)<br />piaget has a D-Link DGE-530T<br /><br /></server-ip></span><span style="font-weight: bold;">Results</span> (lascala was busy.. redo, and add openfiler)<br />cantor-lascala: <span style="font-weight: bold;">418</span> Mbits/sec<br />lascala-lascala: <span style="font-weight: bold;">594</span> Mbits/sec<br />cantor-cantor: <span style="font-weight: bold;">2.25</span> Gbits/sec<br />aria-aria: <span style="font-weight: bold;">637 </span>Mbits/sec<br />lascala-aria: <span style="font-weight: bold;">251 </span>Mbits/sec<br />aria-cantor: <span style="font-weight: bold;">453 </span>Mbits/sec<br />cantor-aria: <span style="font-weight: bold;">538 </span>Mbits/sec

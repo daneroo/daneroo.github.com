@@ -1,0 +1,9 @@
+--- 
+name: using-virtual-ethernet-adapters-in-promiscuous-mode-on-a-linux-host
+layout: post
+title: Using Virtual Ethernet Adapters in Promiscuous Mode on a Linux Host
+time: 2007-07-24 13:32:00.002000 -04:00
+tags: []
+
+---
+Reference from vmware:<br />http://www.vmware.com/support/ws5/doc/ws_net_advanced_linux_vadapter_promiscuous.html<br /><br />change permissions on /dev/vmnet[018] to specific group or all<br />before:<br /><span style="font-family: courier new;">[root@euler ~]# ls -ltr /dev/vm*</span><br /> <span style="font-family: courier new;">crw-------  1 root root  10, 165 Jul 20 13:38 /dev/vmmon</span><br /> <span style="font-family: courier new;">crw-------  1 root root 119,   0 Jul 20 13:38 /dev/vmnet0</span><br /> <span style="font-family: courier new;">crw-------  1 root root 119,   1 Jul 20 13:38 /dev/vmnet1</span><br /> <span style="font-family: courier new;">crw-------  1 root root 119,   8 Jul 20 13:38 /dev/vmnet8</span><br />after:<br />[root@euler ~]# chmod go+rw /dev/vmnet[018]<br />[root@euler ~]# ls -ltr /dev/vm*<br />crw-------  1 root root  10, 165 Jul 20 13:38 /dev/vmmon<br />crw-rw-rw-  1 root root 119,   0 Jul 20 13:38 /dev/vmnet0<br />crw-rw-rw-  1 root root 119,   1 Jul 20 13:38 /dev/vmnet1<br />crw-rw-rw-  1 root root 119,   8 Jul 20 13:38 /dev/vmnet8<br /><br />and back:<br />[root@euler ~]# chmod go-rw /dev/vmnet[018]<br />[root@euler ~]# ls -ltr /dev/vm*<br />crw-------  1 root root  10, 165 Jul 20 13:38 /dev/vmmon<br />crw-------  1 root root 119,   0 Jul 20 13:38 /dev/vmnet0<br />crw-------  1 root root 119,   1 Jul 20 13:38 /dev/vmnet1<br />crw-------  1 root root 119,   8 Jul 20 13:38 /dev/vmnet8
