@@ -71,7 +71,7 @@
         #header {
             margin-left:-20px;
             padding-left:20px;
-            height:9em;
+            height:8em;
             overflow: hidden;
 
             box-shadow: 0 0 8px rgba(0,0,0,.5);
@@ -87,8 +87,10 @@
         }
         .hello100 {
             position:relative;
-            left:270px;
-/*            border: 1px solid red;*/
+            z-index:-1;
+            left:230px;
+            height:1000px;
+            border: 1px solid rgba(255,255,255,0);
             margin-top:0px;
 /*            margin-left:270px;*/
             
@@ -98,12 +100,12 @@
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
         }            
         .hello100 pre {
+/*            border: 1px solid blue;  */
             -webkit-transition: all 30s ease-in-out;
             -moz-transition: all 30s ease-in-out;
             -o-transition: all 30s ease-in-out;
         }
         .hello100 pre:hover {
-            border: 1px solid blue;  
             margin-top:-300px;          
         }
             </style>
@@ -120,6 +122,8 @@
           <h1><a href="{{ site.url }}" rel="home bookmark">{{ site.title }}</a></h1>
           <div>{{ site.description }}</div>
           <div class="hello100"><pre>
+
+
 
 
   perl -e "print 'Hello, Perl!'"
