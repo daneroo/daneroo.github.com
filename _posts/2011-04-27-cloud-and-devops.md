@@ -64,10 +64,9 @@ Also, thinking of your organisations' strategic objectives, try to see if some o
         * [Zenoss](http://www.zenoss.com/)
         * [Nagios](http://www.nagios.org/)
         * [Splunk](http://www.splunk.com/)
-* References
-    * Media
-        * [Velocity 09: John Allspaw, "10+ Deploys Per Day: Dev and Ops Cooperation at Flickr](http://velocityconference.blip.tv/file/2284377/)
-        * [The Changelog Show](http://changelogshow.com/)
-        * [Devops Cafe (podcast)](http://devopscafe.org/)
-        * [Devops is Business Problem (article)](http://dev2ops.org/blog/2010/11/7/devops-is-not-a-technology-problem-devops-is-a-business-prob.html)
-        * [The Cloud Computing Show (podcast)](http://cloudcomputingshow.blogspot.com/)
+* Media References
+    * [Velocity 09: John Allspaw, "10+ Deploys Per Day: Dev and Ops Cooperation at Flickr](http://velocityconference.blip.tv/file/2284377/)
+    * [The Changelog Show](http://changelogshow.com/)
+    * [Devops Cafe (podcast)](http://devopscafe.org/)
+    * [Devops is Business Problem (article)](http://dev2ops.org/blog/2010/11/7/devops-is-not-a-technology-problem-devops-is-a-business-prob.html)
+    * [The Cloud Computing Show (podcast)](http://cloudcomputingshow.blogspot.com/)
