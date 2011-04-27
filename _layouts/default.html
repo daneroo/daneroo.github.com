@@ -1,8 +1,8 @@
 <!doctype html>
-  <head>
+<head>
     <meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>{{ page.title }} | {{ site.title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ site.description }}" />
     <meta name="author" content="{{ site.author }}" />
     <meta name="robots" content="index, follow" />
@@ -12,50 +12,68 @@
     <!--
     <meta name="google-site-verification" content="XUkxAz2T7iH7BfeNCKk88xUnTqNHjnMirb4GQv196GA" />
     -->
-	<link href="{{ site.url }}/feed" rel="alternate" title="Daniel Lauzon's RSS feed" type="application/rss+xml" />
+    <link href="{{ site.url }}/feed" rel="alternate" title="Daniel Lauzon's RSS feed" type="application/rss+xml" />
     <link href="{{ site.url }}" rel="home" />
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link type="text/css" rel="stylesheet" media="screen, projection" href="/css/screen.css" /> 
     <link type="text/css" rel="stylesheet" media="all" href="/css/custom.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" ></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" ></script>
     <!--[if lt IE 8]>
-      <link type="text/css" rel="stylesheet" media="screen, projection" href="/css/ie.css" />
+    <link type="text/css" rel="stylesheet" media="screen, projection" href="/css/ie.css" />
     <![endif]--> 
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	<script type="text/javascript">
-			WebFontConfig = {
-			  custom: { families: ['DroidSansRegular', 'YanoneKaffeesatzRegular'],
-				urls: [ '/css/screen.css' ] }
-			};
+    <script type="text/javascript">
+    WebFontConfig = {
+        custom: { families: ['DroidSansRegular', 'YanoneKaffeesatzRegular'],
+        urls: [ '/css/screen.css' ] }
+    };
 
-	      (function() {
-	        document.getElementsByTagName("html")[0].className += " wf-loading";
-	        var wf = document.createElement('script');
-	        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-	        wf.type = 'text/javascript';
-	        wf.async = 'true';
-	        var s = document.getElementsByTagName('script')[0];
-	        s.parentNode.insertBefore(wf, s);
-	      })();
-	</script>
-  </head>
-  <body>
-    <div class="container">
-      <header class="span-21 last" id="header" >
-        <h1><a href="{{ site.url }}" rel="home bookmark">{{ site.title }}</a></h1>
+    (function() {
+        document.getElementsByTagName("html")[0].className += " wf-loading";
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+        })();
+
+        $(function(){
+            var pre = $(".hello100 pre");
+            var h = pre.height();
+            console.log('jquery is ready: '+h);
+            pre.css('margin-top',-h);
+        })
+        </script>
         <style type="text/css">
+        #header h1 {
+            text-shadow: -1px 1px 2px #597A9B;
+        }
+        #header .profile .name {
+            color: #597A9B;
+            text-align: right;
+            margin-right:10px;
+        }
+        #header img {
+            padding: 4px;
+            margin-bottom: 4px;
+        }
+        #header .profile {
+            float: right;
+            margin-top:0px;
+            margin-right:10px;
+        }
         #header {
             margin-left:-20px;
             padding-left:20px;
-            height:5em;
+            height:9em;
             overflow: hidden;
 
-            text-shadow: -1px 1px 2px #597A9B;
-            
             box-shadow: 0 0 8px rgba(0,0,0,.5);
             -webkit-box-shadow: 0 0 8px rgba(0,0,0,.5);
             -moz-box-shadow: 0 0 8px rgba(0,0,0,.5);
@@ -65,41 +83,74 @@
             -moz-border-radius-bottomright: 10px;
             -moz-border-radius-bottomleft: 10px;
             border-bottom-right-radius: 10px;
-            border-bottom-left-radius: 10px;        }
-        .hello100
-        {
-        position:relative;
-        left:340px;
-        
-        /*width:700px;*/
-        margin-top:-10px;
-        -moz-opacity:.30; filter:alpha(opacity=30); opacity:.30;
-        -webkit-transform: rotate(5deg); 
-            -moz-transform: rotate(5deg);  
-            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-            /*
-            */
-            -webkit-transition: all 10s ease-in-out;
-            -moz-transition: all 10s ease-in-out;
-            -o-transition: all 10s ease-in-out;
+            border-bottom-left-radius: 10px;  
+        }
+        .hello100 {
+            position:relative;
+            left:270px;
+/*            border: 1px solid red;*/
+            margin-top:0px;
+/*            margin-left:270px;*/
             
+            -moz-opacity:.30; filter:alpha(opacity=30); opacity:.30;
+            -webkit-transform: rotate(10deg); 
+            -moz-transform: rotate(10deg);  
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
+        }            
+        .hello100 pre {
+            -webkit-transition: all 30s ease-in-out;
+            -moz-transition: all 30s ease-in-out;
+            -o-transition: all 30s ease-in-out;
         }
-        .hello100:hover {
-            margin-top:-300px;            
+        .hello100 pre:hover {
+            border: 1px solid blue;  
+            margin-top:-300px;          
         }
-        </style>
-        <div class="hello100"><pre>    
-            perl -e "print 'Hello, Perl!'"
-            ruby -e "puts 'Hello, Ruby!'"
-            &lt;?php echo "Hello, PHP!"; ?&gt; 
-            object HelloWorld {
-                def main(args: Array[String]) {
-                  println("Hello, Scala!")
-                }
-              }
-            printf("Hello C!\n");
-            bash -c "echo 'Hello bash\!'"
-        </pre></div>
+            </style>
+        </head>
+  <body>
+    <div class="container">
+      <header class="span-21 last" id="header" >
+          <div class="profile">
+              <a href="/splash.html">
+                  <img src="/images/daniel-lauzon-gravatar.jpg" align="center" />
+                  <h4 class="name">Daniel Lauzon</h4>
+              </a>
+          </div>
+          <h1><a href="{{ site.url }}" rel="home bookmark">{{ site.title }}</a></h1>
+          <div>{{ site.description }}</div>
+          <div class="hello100"><pre>
+
+
+  perl -e "print 'Hello, Perl!'"
+
+
+  ruby -e "puts 'Hello, Ruby!'"
+
+
+  &lt;?php echo "Hello, PHP!"; ?&gt; 
+
+
+  object HelloWorld {
+      def main(args: Array[String]) {
+          println("Hello, Scala!")
+      }
+  }
+
+
+
+  printf("Hello C!\n");
+
+
+
+  bash -c "echo 'Hello bash\!'"
+
+
+
+
+
+          </pre></div>
+        
         
       </header>
 
@@ -110,11 +161,6 @@
         <div class="sidebarbox"> 
             
             <!--<a href="{{ site.url }}"> -->
-          <a href="/splash.html"> -->
-              <img src="/images/daniel-lauzon-gravatar.jpg" align="center" style="margin-top:-100px;">
-              <h4>Daniel Lauzon</h4>
-          </a>
-
           <ul id="pages"> 
             <li> 
               <a rel="bookmark" title="About Me" href="{{ site.url }}/about">About</a> 
@@ -154,7 +200,9 @@
             </li> 
             <li> 
                 <!-- fix this and add a popup layer-->
+                <!-- 
                 <object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="100" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=066778f7098bb22c4686341239df5c5b6b2f5af8&style=0" /></object>
+                -->
             </li> 
             <!--
             <li> 
