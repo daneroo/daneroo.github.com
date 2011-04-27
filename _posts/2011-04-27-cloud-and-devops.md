@@ -3,6 +3,7 @@ name: cloud-and-devops
 layout: post
 title: Cloud and DevOps
 time: 2011-04-27 00:24:00 -04:00
+excerpt: For our purposes, Devops, is not so much a set of specific tools and practices, as it is an invitation to broaden the scope of many established practices to include aspects which had hitherto been considered unrelated. Devops borows heaviliy from the toolset of Agile Development and extends their use into other fields such as IT Operations.
 tags: [devops]
 
 ---
@@ -33,16 +34,20 @@ The widespread availability and low-or-no cost of these tools, makes them quite 
 
 I suggest you look at your current operations, no doubt there are some irritants which could use some loving attention; then try to see if some of these pratices can be creatively and efficiently be put to use.
 
+* Is there something you can automate ?
+* Is there something you can measure ?
+* is there a functionality you can expose through an API ?
+
+Think: **repeatable, measurable, testable.**
+
 Also, thinking of your organisations' strategic objectives, try to see if some of these tools and practices could give you a competitive advantage, *before your competitors do*!
+
+### These are a few of my *favorite* things...
 
 * Strategic objectves
     * Leveraging comodity pricing of compute resources
     * Deployment speed and flexibility
     * Ensured Quality of deployment
-* Requirements
-    * repeatable infrastructure configuration
-    * testable infrasture configuration
-    * measurable improvements.
 * Tools and Tactics
     * Configuration Management
         * [Chef (Opscode)](http://www.opscode.com/)
