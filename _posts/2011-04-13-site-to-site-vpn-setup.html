@@ -1,9 +1,0 @@
---- 
-name: site-to-site-vpn-setup
-layout: post
-title: Site-to-Site VPN Setup
-time: 2011-04-13 22:27:00 -04:00
-tags: []
-
----
-Finally got around to re-installing routers at home and in the office.<br /><br />I had a really nice setup running Open-WRT on a pair of Linksys WRT54G's for a few years.<br /><br />But when One of the routers died, I thought it would be a good time to upgrade to newer 802.11n wireless, and maybe get some attached storage as well.<br /><br />I ended up get a Netgear WNR3500L, the (Ahem) open-source router.<br />I also had an extra WRTSL54GS lying around which could go to the office since wireless is infrequently used there and speed is not an issue.<br /><br />As long as I was re-installing everything, I thought that surveying the latest developments.<br />Thnigs haven't dramatically changed, although everything seems to have gotten incrementally better and easier.<br /><br />I ended up choosing the <a href="http://www.polarcloud.com/tomato">Tomato</a> v-1.28 distro, actualy, a rebuilt version of it which has both <a href="http://tomatousb.org/">openvpn and usb-storge support</a> all ready to go.<br /><br />I managed to bring up a site to site vpn setup using only the GUI. Although key generation was done on an ubuntu machine (and the certificated pasted in the GUI).<br /><br />Note goedel:/etc/openvpn/easy-rsa/keys,goedel:/etc/openvpn/vars<br /><br />The VPN came up right away, but to see the network on the client side, I had to follow <a href="http://www.wasagacomputers.com/home/2010/8/10/tutorial-site-to-site-vpn-using-tomato-firmware-and-openvpn.html">these instructions</a>.<br /><br />VPN-Server-Config / Server1 / Advanced :<br />check: Manage Client-Specific Options<br />and enable push to rd-client|192.168.3.0/24.<br />Done.<br /><br />Note gotta archive <br />goedel:/etc/openvpn/easy-rsa/keys,goedel:/etc/openvpn/vars<br />darwin:/home/daniel/Downloads/Tomato*
