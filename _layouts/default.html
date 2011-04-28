@@ -41,49 +41,50 @@
         wf.async = 'true';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
-        })();
-        var hellos = [
-        {"perl":"perl -e \"print 'Hello, Perl!'\""},
-        {"ruby":"ruby -e \"puts 'Hello, Ruby!'\""},
-        {"php":"<?php echo \"Hello, PHP!\"; ?>"},
-        {"scala":"object HelloWorld {\n    def main(args: Array[String]) {\n        println(\"Hello, Scala!\")\n    }\n}"},
-        {"C":"printf(\"Hello C!\\n\");"},
-        {"bash":"bash -c \"echo 'Hello bash\\!'\""}
-        ];
+    })();
 
-        function randN(upper){
-            return Math.floor(Math.random()*10000000)%upper;
-        }
-        function addHello(){
-            var hello,pre,deg;
-            hello = $('<div class="hello" />');
-            pre = $("<pre />");
-            hello.append(pre);
-            deg = randN(30)-15;
-            hello.css('-webkit-transform', 'rotate('+deg+'deg)'); 
-            hello.css('-moz-transform', 'rotate('+deg+'deg)'); 
-            hello.css('-o-transform', 'rotate('+deg+'deg)'); 
-            hello.css('-ms-transform', 'rotate('+deg+'deg)'); 
-            //hello.css('filter', 'progid:DXImageTransform.Microsoft.BasicImage(rotation=5)'); 
-             
-            pre.text("Hello "+new Date());
-            var fragment = hellos[randN(hellos.length)];
-            $.each(fragment, function(language, code) { 
-                pre.text(code);
-            }); 
-            $("#helloholder").append(hello);            
-            setTimeout(function(){
-                var h = pre.height();
-                //console.log('animate pre deg:'+deg+' h: '+h);
-                pre.css('margin-top',-h); 
-                hello.fadeOut(2000,function(){hello.remove()});   
-            },2000);
-        }
+    var hellos = []; //loaded from hellos.html
 
-        $(function(){
-            // jQ ready
-            setInterval(addHello,4000);
-        })
+    function randN(upper){
+        return Math.floor(Math.random()*10000000)%upper;
+    }
+    function addHello(){
+        var hello,pre,deg;
+        hello = $('<div class="hello" />');
+        pre = $("<pre />");
+        hello.append(pre);
+        deg = randN(30)-15;
+        hello.css('-webkit-transform', 'rotate('+deg+'deg)'); 
+        hello.css('-moz-transform', 'rotate('+deg+'deg)'); 
+        hello.css('-o-transform', 'rotate('+deg+'deg)'); 
+        hello.css('-ms-transform', 'rotate('+deg+'deg)'); 
+        //hello.css('filter', 'progid:DXImageTransform.Microsoft.BasicImage(rotation=5)'); 
+         
+        pre.text("Hello "+new Date());
+        var fragment = hellos[randN(hellos.length)];
+        $.each(fragment, function(language, code) { 
+            pre.text(code);
+        }); 
+        $("#helloholder").append(hello);            
+        setTimeout(function(){
+            var h = pre.height();
+            //console.log('animate pre deg:'+deg+' h: '+h);
+            pre.css('margin-top',-h); 
+            hello.fadeOut(2000,function(){hello.remove()});   
+        },2000);
+    }
+    $(function(){
+        // jQ ready
+        hellos=[];
+        $('.hiddenhello').each(function(index) {
+            var lang = $(this).attr("id");
+            var code = $(this).text();
+            hellos.push({ lang : code });
+            //console.log(lang +' : ' + code);
+          });
+        
+        setInterval(addHello,4000);
+    })
         </script>
         <style type="text/css">
         #header h1 {
@@ -119,6 +120,9 @@
             -moz-border-radius-bottomleft: 10px;
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;  
+        }
+        .hiddenhello { /* where th data lives*/
+            display:none;
         }
         .hello {
             position:relative;
@@ -231,6 +235,7 @@
       </footer>
     </div>
 
+    {% include hellos.html %}
     {% include disqus.html %}
     {% include google_analytics.html %}
 	<script src="/js/highlight.pack.js"></script>
