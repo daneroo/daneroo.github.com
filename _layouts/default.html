@@ -42,12 +42,47 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
         })();
+        var hellos = [
+        {"perl":"perl -e \"print 'Hello, Perl!'\""},
+        {"ruby":"ruby -e \"puts 'Hello, Ruby!'\""},
+        {"php":"<?php echo \"Hello, PHP!\"; ?>"},
+        {"scala":"object HelloWorld {\n    def main(args: Array[String]) {\n        println(\"Hello, Scala!\")\n    }\n}"},
+        {"C":"printf(\"Hello C!\\n\");"},
+        {"bash":"bash -c \"echo 'Hello bash\\!'\""}
+        ];
+
+        function randN(upper){
+            return Math.floor(Math.random()*10000000)%upper;
+        }
+        function addHello(){
+            var hello,pre,deg;
+            hello = $('<div class="hello" />');
+            pre = $("<pre />");
+            hello.append(pre);
+            deg = randN(30)-15;
+            hello.css('-webkit-transform', 'rotate('+deg+'deg)'); 
+            hello.css('-moz-transform', 'rotate('+deg+'deg)'); 
+            hello.css('-o-transform', 'rotate('+deg+'deg)'); 
+            hello.css('-ms-transform', 'rotate('+deg+'deg)'); 
+            //hello.css('filter', 'progid:DXImageTransform.Microsoft.BasicImage(rotation=5)'); 
+             
+            pre.text("Hello "+new Date());
+            var fragment = hellos[randN(hellos.length)];
+            $.each(fragment, function(language, code) { 
+                pre.text(code);
+            }); 
+            $("#helloholder").append(hello);            
+            setTimeout(function(){
+                var h = pre.height();
+                console.log('animate pre deg:'+deg+' h: '+h);
+                pre.css('margin-top',-h); 
+                hello.fadeOut(5000,function(){hello.remove()});   
+            },2000);
+        }
 
         $(function(){
-            var pre = $(".hello100 pre");
-            var h = pre.height();
-            console.log('jquery is ready: '+h);
-            pre.css('margin-top',-h);
+            // jQ ready
+            setInterval(addHello,5000);
         })
         </script>
         <style type="text/css">
@@ -71,7 +106,7 @@
         #header {
             margin-left:-20px;
             padding-left:20px;
-            height:8em;
+            height:9em;
             overflow: hidden;
 
             box-shadow: 0 0 8px rgba(0,0,0,.5);
@@ -85,27 +120,30 @@
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;  
         }
-        .hello100 {
+        .hello {
             position:relative;
             z-index:-1;
-            left:230px;
-            height:1000px;
-            border: 1px solid rgba(255,255,255,0);
-            margin-top:0px;
-/*            margin-left:270px;*/
+            left:350px;
+            top:-30px;
+            /*            margin-top:0px;*/
+            height:0px;
+            width:300px;
+            border: 1px solid rgba(255,255,255,00);
             
             -moz-opacity:.30; filter:alpha(opacity=30); opacity:.30;
-            -webkit-transform: rotate(10deg); 
+            
+/*            -webkit-transform: rotate(10deg); 
             -moz-transform: rotate(10deg);  
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
-        }            
-        .hello100 pre {
+*/        }            
+        .hello pre {
 /*            border: 1px solid blue;  */
-            -webkit-transition: all 30s ease-in-out;
-            -moz-transition: all 30s ease-in-out;
-            -o-transition: all 30s ease-in-out;
+            margin:0px;
+            -webkit-transition: all 5s ease-out;
+            -moz-transition: all 5s ease-out;
+            -o-transition: all 5s ease-out;
         }
-        .hello100 pre:hover {
+        .hello pre:hover {
             margin-top:-300px;          
         }
             </style>
@@ -121,41 +159,7 @@
           </div>
           <h1><a href="{{ site.url }}" rel="home bookmark">{{ site.title }}</a></h1>
           <div>{{ site.description }}</div>
-          <div class="hello100"><pre>
-
-
-
-
-  perl -e "print 'Hello, Perl!'"
-
-
-  ruby -e "puts 'Hello, Ruby!'"
-
-
-  &lt;?php echo "Hello, PHP!"; ?&gt; 
-
-
-  object HelloWorld {
-      def main(args: Array[String]) {
-          println("Hello, Scala!")
-      }
-  }
-
-
-
-  printf("Hello C!\n");
-
-
-
-  bash -c "echo 'Hello bash\!'"
-
-
-
-
-
-          </pre></div>
-        
-        
+          <div id="helloholder" />
       </header>
 
       <div class="span-16" id="content">
