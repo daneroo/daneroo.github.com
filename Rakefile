@@ -74,13 +74,14 @@ task :post do
   slug = title.strip.downcase.gsub(/ /, '-')
 
   # E.g. 2006-07-16_11-41-batch-open-urls-from-clipboard.markdown
-  path = "#{ROOT_DIR}/_posts/#{datetime}-#{slug}.markdown"
+  path = "#{ROOT_DIR}/_posts/#{datetime}-#{slug}.md"
 
   header = <<-END
 ---
 layout: post
 title: #{title}
 excerpt: 
+tags: [devops]
 comments: true
 ---
 
