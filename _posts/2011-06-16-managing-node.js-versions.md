@@ -17,5 +17,5 @@ There are different solutions,
 I Chose all three in turn, __but I am now usign n___.
 Use or install the latest official release:
 
-    sudo npm install n
+    sudo npm install -g n
     suso n latest
