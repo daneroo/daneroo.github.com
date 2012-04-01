@@ -6,7 +6,7 @@ tags: [javascript]
 comments: true
 ---
 
-While having a discussion recently on the tradeoffs of different data representations of our json data for an [open data project](https://github.com/GatineauOuverte/gatineau_parcsespacesverts), I thought it important to put this aspect of optimizaation into context.
+While having a discussion recently on the tradeoffs of different data representations of our json data for an [open data project](https://github.com/GatineauOuverte/gatineau_parcsespacesverts), I thought it important to put this aspect of optimization into context.
 
 Minification is the process by which javascript (json) text representation is minimized by removing all unnecessary characters from the source, like white-space. Sometimes it involves safe-rewiting variable names for shorter ones, etc.
 
