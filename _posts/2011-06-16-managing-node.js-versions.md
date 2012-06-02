@@ -17,18 +17,12 @@ There are different solutions,
 I Chose all three in turn, __but I am now usign n__.
 Use or install the latest official release:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 sudo npm install -g n
 n ls             # list available node versions
 n --latest       # print the latest version available
 n bin <version>  # print the bin path
 sudo n latest    # install latest
 {% endhighlight %}
-
-    sudo npm install -g n
-    n ls             # list available node versions
-    n --latest       # print the latest version available
-    n bin <version>  # print the bin path
-    sudo n latest    # install latest
     
 n manages its installations in `/usr/local/n/versions/`.
