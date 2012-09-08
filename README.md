@@ -60,6 +60,14 @@ In your `_config.yml` file put the following so you don’t have to specify the 
 
     pygments: true
 
+To generates the style sheet, and make the rules specific to .highlight class:
+
+    pygmentize -f html -S default -a .highlight > css/pygments.css
+    
+See [this article](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html) for interaction between bootstrap and css.
+
+
+
 To emulate TJSteins site:
 
     gem install jekyll-pagination

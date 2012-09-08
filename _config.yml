@@ -7,7 +7,7 @@ description: "my personal blog"
 
 auto: false
 source: .
-paginate: 15
+paginate: 10
 paginate_file: index.html
 
 permalink: /:year/:month/:title
