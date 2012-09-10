@@ -8,8 +8,9 @@ title: Home
     {% include hero.html %}
 {% endif %}
 
-<div id="blog"></div>
+
 {% include pagination.html %}
+<h2 id="blog">Blog</h2>
 {% for post in paginator.posts %}
   <article class="post">
 
