@@ -24,11 +24,9 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
 * landing page (see splash.html)
 * socialbar snippet
 * ------------------
-* remove cruft jquery/modernizr highlight ?
+* cleanup images into img|post_assets
 * ----------------
-*   Remove all TJStein refs (blog/about/links...)
 *   replace disqus/goggle analytics
-*   cleanup/rm images
 *   check Rake tasks - remove backup
 *   Remove unwanted JS (/js/highlight, /languages)
 *   Rakefile
