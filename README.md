@@ -20,6 +20,8 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
 * bootstrap (less or css) see [less.app](http://incident57.com/less/)
 * layout (landing, portfolio, blog (ohh))
 * customize (fonts, boottheme) as in [this article](http://antjanus.com/blog/web-design-tips/user-interface-usability/customize-twitter-bootstrap-into-themes/)
+* http://fortawesome.github.com/Font-Awesome/
+* http://icomoon.io/#toPreview
 * move to daniel-lauzon.com
 * landing page (see splash.html)
 * socialbar snippet
