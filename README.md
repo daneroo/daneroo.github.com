@@ -16,7 +16,7 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
 ### TODO
 
 * From Scratch
-* jQuery or not / initializr or not
+* start from initializr w/bootstrap/jquery
 * bootstrap (less or css) see [less.app](http://incident57.com/less/)
 * layout (landing, portfolio, blog (ohh))
 * customize (fonts, boottheme) as in [this article](http://antjanus.com/blog/web-design-tips/user-interface-usability/customize-twitter-bootstrap-into-themes/)
