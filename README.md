@@ -23,6 +23,7 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
 * move to daniel-lauzon.com
 * landing page (see splash.html)
 * socialbar snippet
+* replace hellos.js from default-old.html
 * ------------------
 * cleanup images into img|post_assets
 * ----------------
