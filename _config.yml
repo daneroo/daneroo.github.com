@@ -20,3 +20,4 @@ exclude:
   - _drafts
   - Rakefile
   - import
+  - initializr
