@@ -1,22 +1,28 @@
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* 
+==========================================================================
+Author's custom styles
+========================================================================== 
+*/
 
 
+#danhero {
+    -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
 
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
 
+  background-position: center;
+  /*background-repeat: no-repeat;*/
 
-
-
-
-
-
-
-
-
-
-
-
+  background-attachment: fixed;
+  background-color: #222;
+  background-image: url('../images/background.jpg');
+}
 
