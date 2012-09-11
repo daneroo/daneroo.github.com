@@ -3,19 +3,13 @@
   <ul>
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-          <li><a href="/#blog"> « Newer</a></li>
+          <li><a href="/blog.html"> « Newer</a></li>
         {% else %}
           <li><a href="/page{{paginator.previous_page}}"> « Newer</a></li>
         {% endif %}
     {% else %}
         <li class="disabled"><a href="javascript:;"> « Newer</a></li>
     {% endif %}
-    <!--
-    <li><a href="/">1</a></li>
-    <li><a href="/page2">2</a></li>
-    <li><a href="/page3">3</a></li>
-    <li><a href="/page4">4</a></li>
-    -->
     {% if paginator.next_page %}
       <li><a href="/page{{paginator.next_page}}">Older »</a></li>
     {% else %}

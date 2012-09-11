@@ -1,33 +1,76 @@
 ---
 layout: default
-title: Blog & Portfolio
+title: Home
 ---
 
-<!-- include hero only on page1-->
-{% if paginator.next_page == 2 %}
-    {% include hero.html %}
-{% endif %}
 
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="row-fluid">
+    <div class="span12">
+        <div id="danhero" class="hero-unit">
+            <!-- <img src="/images/daniel-lauzon-gravatar.jpg" align="left" style="margin-right:30px; margin-top:7px;"> -->
+            <!-- <h1>Hello, world!</h1> -->
+            <p>I am a software architect, and a proficient programmer.</p>
 
-{% include pagination.html %}
-<h2 id="blog">Blog</h2>
-{% for post in paginator.posts %}
-  <article class="post">
+            <p>I hold a Ph.D. in Information Theory,
+                and a masters in Applied Mathematics.
+            </p>
 
-    <h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a></h3>
+            <p>I have built a successful enterprise software company.</p>
 
-    {{ post.content }}
+            <!-- <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p> -->
+            
+        </div><!--/hero-->
+    </div><!--/span-->
+</div><!--/row-->
 
-  <div class="meta">
-   <div class="published">
-      Published: {{ post.date | date: "%Y-%m-%d" }}
-      &mdash;
-      <a href="{{ site.url }}{{ post.url }}#disqus_thread" title="Comments">Comments</a>
-   </div>
-  </div>
+<!-- Example row of columns -->
+<div class="row-fluid">
+    <div class="span4">
+        <h2>Contact</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    </div><!--/span-->
+    <div class="span8">
+        <h2>Portfolio</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn" href="#">View details &raquo;</a></p>
 
+        <div class="row-fluid">
+            <ul class="thumbnails">
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div><!--/row-->
 
-  </article>
-{% endfor %}
+    </div><!--/span-->
 
-{% include pagination.html %}
+</div><!--/row-->
+

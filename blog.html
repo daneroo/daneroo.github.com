@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blog
+---
+<h2 id="blog">Blog - One Hundred Hellos</h2>
+
+
+{% include pagination.html %}
+{% for post in paginator.posts %}
+  <article class="post">
+
+    <h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a></h3>
+
+    {{ post.content }}
+
+  <div class="meta">
+   <div class="published">
+      Published: {{ post.date | date: "%Y-%m-%d" }}
+      &mdash;
+      <a href="{{ site.url }}{{ post.url }}#disqus_thread" title="Comments">Comments</a>
+   </div>
+  </div>
+
+
+  </article>
+{% endfor %}
+
+{% include pagination.html %}

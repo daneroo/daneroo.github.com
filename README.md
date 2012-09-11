@@ -41,9 +41,15 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
 
 ### Install requirements:
 
+    # if rubygems<1.3.7 -- gem update --system
     gem install jekyll
     gem install rdiscount
+    
+    # if you need to paginate more than one file,
+    # or a file other than index.html: blog.html for us
     gem install jekyll-pagination
+    # and add to _plugins/ext.rb
+    require 'jekyll/pagination'
 
 ### Notes:
 
