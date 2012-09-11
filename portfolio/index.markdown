@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Portfolio
 ---
 
 <img src="/images/daniel-lauzon-gravatar.jpg" align="left" style="margin-right:30px; margin-top:7px;">
