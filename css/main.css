@@ -7,8 +7,13 @@ Author's custom styles
 */
 
 
-#danhero {
-    -moz-background-size: 100% auto;
+#danheroNOT {
+/*  margin-left:-20px;
+  margin-right:-20px;
+
+  border-radius: 0;
+*/  
+  -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
   -webkit-background-size: 100% auto;
   background-size: 100% auto;
@@ -23,6 +28,62 @@ Author's custom styles
 
 /*  background-attachment: fixed;*/
   background-color: #222;
-  background-image: url('../images/background.jpg');
+/*  background-image: url('../images/background.jpg');*/
+  background-image: url('../img/about-me-trans.png');
+  
+  background-size: contain;
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-position-y:0;
+  
 }
 
+/*squeeze navbar for 320px h-padding 15->7 */
+.navbar .nav > li > a {
+  padding: 10px 7px 10px;
+}
+
+/* space down the btn */
+#danhero .btn { 
+  margin-top:20px;
+}
+#danhero p {
+  margin: 0 0 2px;
+  line-height: 20px;
+}
+#danhero {
+  padding:35px;
+  background-color: #2699ff; /* Old browsers */
+  background: -moz-linear-gradient(top,  hsl(208,100%,51%) 0%, hsl(208,100%,85%) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsl(208,100%,51%)), color-stop(100%,hsl(208,100%,85%))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  hsl(208,100%,51%) 0%,hsl(208,100%,85%) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  hsl(208,100%,51%) 0%,hsl(208,100%,85%) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  hsl(208,100%,51%) 0%,hsl(208,100%,85%) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  hsl(208,100%,51%) 0%,hsl(208,100%,85%) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2699ff', endColorstr='#7fc3ff',GradientType=0 ); /* IE6-9 */
+  background-color: #2699ff; /* Old browsers */
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+
+  background-position: center;
+  background-image: url('../img/about-me-trans.png');
+  background-position-y:0;
+  
+}
+
+@media (min-width: 670px){
+  #danhero {
+    height:250px;
+    -webkit-background-size: 640px,auto;
+    background-repeat: no-repeat;
+    background-position-y:0;
+    background-position-x:0;
+  }
+}
