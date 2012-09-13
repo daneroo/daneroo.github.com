@@ -17,6 +17,8 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
 
 * From Scratch
 * start from initializr w/bootstrap/jquery
+* visit mobileboilerplate.com for other ideas: zepto ?
+* how about a build script
 * bootstrap (less or css) see [less.app](http://incident57.com/less/)
 * layout (landing, portfolio, blog (ohh))
 * customize (fonts, boottheme) as in [this article](http://antjanus.com/blog/web-design-tips/user-interface-usability/customize-twitter-bootstrap-into-themes/)
