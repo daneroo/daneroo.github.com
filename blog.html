@@ -11,19 +11,19 @@ title: Blog
       <header>
           <a href="{{ site.url }}{{ post.url }}" title="Permanent link to this post" rel="bookmark permalink">
               <h3>
-                  <small>{{ post.date | date_to_long_string }} - </small>
                   {{ post.title }}
+                  <small> - {{ post.date | date_to_long_string }}</small>
                   {% if post.tags.size > 0 %}
                   <small> - {{ post.tags }}</small>
                   {% endif %}
               </h3>
           </a>
-          <blockquote>
-              {% if post.excerpt.size > 0  %}
-              <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.excerpt }}</a>
-              {% endif %}      
-          </blockquote>
       </header>
+      <blockquote>
+          {% if post.excerpt.size > 0  %}
+          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.excerpt }}</a>
+          {% endif %}      
+      </blockquote>
 
     {{ post.content }}
 

@@ -6,8 +6,8 @@ layout: default
     <header>
         <a href="{{ site.url }}{{ post.url }}" title="Permanent link to this post" rel="bookmark permalink">
             <h3>
-                <small>{{ page.date | date_to_long_string }} - </small>
                 {{ page.title }}
+                <small> - {{ page.date | date_to_long_string }}</small>
                 {% if page.tags.size > 0 %}
                 <small> - {{ page.tags }}</small>
                 {% endif %}

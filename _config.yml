@@ -7,7 +7,7 @@ description: "Portfolio and Blog"
 
 auto: false
 source: .
-paginate: 3
+paginate: 7
 paginate_file: blog.html
 
 permalink: /:year/:month/:title

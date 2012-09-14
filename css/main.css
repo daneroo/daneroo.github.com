@@ -80,3 +80,11 @@ p.vspace { /*vertical spacing for hero <p>*/
   }
 }
 
+/*Blog header formatting*/
+article.post header {
+  background-color:#eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding-left:10px;
+}
