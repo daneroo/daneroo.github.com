@@ -8,18 +8,32 @@ title: Blog
 {% include pagination.html %}
 {% for post in paginator.posts %}
   <article class="post">
-
-    <h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a></h3>
+      <header>
+          <a href="{{ site.url }}{{ post.url }}" title="Permanent link to this post" rel="bookmark permalink">
+              <h3>
+                  <small>{{ post.date | date_to_long_string }} - </small>
+                  {{ post.title }}
+                  {% if post.tags.size > 0 %}
+                  <small> - {{ post.tags }}</small>
+                  {% endif %}
+              </h3>
+          </a>
+          <blockquote>
+              {% if post.excerpt.size > 0  %}
+              <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">{{ post.excerpt }}</a>
+              {% endif %}      
+          </blockquote>
+      </header>
 
     {{ post.content }}
 
-  <div class="meta">
-   <div class="published">
+  <footer>
       Published: {{ post.date | date: "%Y-%m-%d" }}
       &mdash;
-      <a href="{{ site.url }}{{ post.url }}#disqus_thread" title="Comments">Comments</a>
-   </div>
-  </div>
+      <a href="http://twitter.com/?status=Reading '{{ post.title }}' from {{ site.url }}{{ post.url }} by @daneroo" title="Tweet {{ page.title }}">Tweet</a> 
+      &mdash;
+      <a class="permalink" href="{{ site.url }}{{ post.url }}" rel="bookmark permalink" title="Permalink for {{ post.title }}">Permalink</a>
+  </footer>
 
 
   </article>

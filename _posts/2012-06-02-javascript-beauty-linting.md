@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Javascript Beauty Linting
-excerpt: 
+excerpt: Discussing a workflow for formatting and linting JavaScript
 tags: [javascript]
 comments: true
 ---
