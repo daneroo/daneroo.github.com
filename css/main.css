@@ -183,7 +183,7 @@ opacity: .25;
 /* Desktop large
 ------------------------- */
 @media (min-width: 1200px) {
-  .bs-docs-sidenav {
+  .dl-sidenav {
     width: 258px;
   }
 }
@@ -200,7 +200,7 @@ opacity: .25;
   }
 
   /* When affixed, space properly */
-  .bs-docs-sidenav {
+  .dl-sidenav {
     top: 0;
     margin-top: 30px;
     margin-right: 0;
@@ -211,11 +211,11 @@ opacity: .25;
 ------------------------- */
 @media (min-width: 768px) and (max-width: 980px) {
   /* Adjust sidenav width */
-  .bs-docs-sidenav {
+  .dl-sidenav {
     width: 166px;
     margin-top: 20px;
   }
-  .bs-docs-sidenav.affix {
+  .dl-sidenav.affix {
     top: 0;
   }
 }
@@ -223,11 +223,11 @@ opacity: .25;
 /* Tablet
 ------------------------- */
 @media (max-width: 767px) {
-  .bs-docs-sidenav {
+  .dl-sidenav {
     width: auto;
     margin-bottom: 20px;
   }
-  .bs-docs-sidenav.affix {
+  .dl-sidenav.affix {
     position: static;
     width: auto;
     top: 0;
