@@ -1,7 +1,11 @@
 ---
-layout: page
+layout: default
 title: Archives
 ---
+<header>
+    <h2>{{ page.title }}</h2>
+</header>
+
   {% for post in site.posts %}
       
       <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | escape }}" rel="bookmark">
