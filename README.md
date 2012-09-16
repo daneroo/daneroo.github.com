@@ -1,11 +1,11 @@
 [This repository](https://github.com/daneroo/daneroo.github.com) holds the source code and configuration for my personal website.
 
-The site has been redone with bootstrap. (2.1)
-
-This site site was originally forked/cloned/copied/modified from [TJ Steins's site](http://tjstein.com/) which was publicly accessible at [github](https://github.com/bummercloud/tjstein.com)
+##Usage
 
 ### To run and serve:
 
+    rake
+    # or
     jekyll --server --auto --url http://localhost:4000
 
 ### To view:
@@ -13,20 +13,18 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
     open http://localhost:4000
     open -a Google\ Chrome.app  http://localhost:4000
 
-### TODO
+#DNS
+ TLD and www is pointed to [gihub pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
+## TODO
 
-* From Scratch
-* start from initializr w/bootstrap/jquery
-* visit mobileboilerplate.com for other ideas: zepto ?
+* move to daniel-lauzon.com
+* Move to less for bootstrap and customization
 * how about a build script
 * a qr code (zxing+color)
-* bootstrap (less or css) see [less.app](http://incident57.com/less/)
-* layout (landing, portfolio, blog (ohh))
 * customize (fonts, boottheme) as in [this article](http://antjanus.com/blog/web-design-tips/user-interface-usability/customize-twitter-bootstrap-into-themes/)
 * http://fortawesome.github.com/Font-Awesome/
 * http://icomoon.io/#toPreview
-* move to daniel-lauzon.com
-* landing page (see splash.html)
+* visit mobileboilerplate.com for other ideas: zepto ?
 * socialbar snippet
 * replace hellos.js from default-old.html
 * ------------------
@@ -34,11 +32,9 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
 * ----------------
 *   replace disqus/goggle analytics
 *   check Rake tasks - remove backup
-*   Remove unwanted JS (/js/highlight, /languages)
 *   Rakefile
 *   robots.txt
 *   sitemap.xml (+gogle ping)
-*   daniel-lauzon.com: CNAME
 *   <strike>landing page</strike>
 *   <strike>get a favicon.ico</strike>
 
@@ -47,22 +43,16 @@ This site site was originally forked/cloned/copied/modified from [TJ Steins's si
     # if rubygems<1.3.7 -- gem update --system
     gem install jekyll
     gem install rdiscount
-    
+
+#### Pagination 
+
     # if you need to paginate more than one file,
     # or a file other than index.html: blog.html for us
     gem install jekyll-pagination
     # and add to _plugins/ext.rb
     require 'jekyll/pagination'
 
-### Notes:
-
-    jekyll --rdiscount
-
-Or, in your `_config.yml` file put the following so you don’t have to specify the flag:
-
-    markdown: rdiscount
-
-python for syntax highlighting
+#### Syntax highlighting (python)
 
     easy_install Pygments
 
@@ -77,8 +67,9 @@ To generates the style sheet, and make the rules specific to .highlight class:
 See [this article](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html) for interaction between bootstrap and css.
 
 
+## History
+**2012** The site has been redone with bootstrap (responsive). (2.1)
 
-To emulate TJSteins site:
+**2011** This site site was originally forked/cloned/copied/modified from [TJ Steins's site](http://tjstein.com/) which was publicly accessible at [github](https://github.com/bummercloud/tjstein.com)
 
-    gem install jekyll-pagination
     
