@@ -1,14 +1,13 @@
 title: "Daniel Lauzon"
-#url: "http://daneroo.github.com"
-url: "http://m.daniel-lauzon.com"
+url: "http://daneroo.github.com"
 author: "Daniel Lauzon"
 email: "daniel.lauzon@gmail.com"
 description: "Portfolio and Blog"
 
 auto: false
 source: .
-paginate: 7
-paginate_file: blog.html
+paginate: 10
+#paginate_file: blog.html
 
 permalink: /:year/:month/:title
 

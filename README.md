@@ -17,7 +17,6 @@
  TLD and www is pointed to [gihub pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
 ## TODO
 
-* move to daniel-lauzon.com
 * Move to less for bootstrap and customization
 * how about a build script
 * a qr code (zxing+color)
@@ -35,6 +34,7 @@
 *   Rakefile
 *   robots.txt
 *   sitemap.xml (+gogle ping)
+* <strike>move to daniel-lauzon.com</strike>
 *   <strike>landing page</strike>
 *   <strike>get a favicon.ico</strike>
 
