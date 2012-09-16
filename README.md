@@ -17,6 +17,7 @@
  TLD and www is pointed to [gihub pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
 ## TODO
 
+* highlight correct entry in navbar
 * Move to less for bootstrap and customization
 * how about a build script
 * a qr code (zxing+color)
