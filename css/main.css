@@ -234,5 +234,11 @@ opacity: .25;
   }
 }
 
-
+/* typography */
+.subsection {
+	color: #08C;
+}
+h5.subsection {
+	margin-bottom: 0;
+}
 
