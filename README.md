@@ -49,7 +49,7 @@
     gem install rdiscount
 
 ## History
-**2012** The site has been redone with bootstrap (responsive). (2.1)
+**2012** The site has been redone with bootstrap (responsive). (2.1). It was also split into two repos one for personal [site](http://daniel-lauzon.com/), and one for the [blog](http://onehundredhellos.daniel-lauzon.com/)
 
 **2011** This site site was originally forked/cloned/copied/modified from [TJ Steins's site](http://tjstein.com/) which was publicly accessible at [github](https://github.com/bummercloud/tjstein.com)
 
