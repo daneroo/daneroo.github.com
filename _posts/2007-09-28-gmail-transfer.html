@@ -1,9 +1,0 @@
---- 
-name: gmail-transfer
-layout: post
-title: Gmail transfer
-time: 2007-09-28 01:17:00.002000 -04:00
-tags: []
-
----
-Setup pop server on boole.<br /><br />netstat -anop --tcp :to find open ports. 993/995 are listening<br />tcp        0      0 0.0.0.0:993             0.0.0.0:*               LISTEN      3260/xinetd         off (0.00/0/0)<br />tcp        0      0 0.0.0.0:995             0.0.0.0:*               LISTEN      3260/xinetd         off (0.00/0/0)<br /><br />map hole in firewall to 995 (pop3s), say rd:8995 -> 201:995<br />load up the mailboxes one by one, in /var/mail/spool/catherine, and let it rip<br />Sometimes have problems with mbox locks...<br />kill the ipop process and restarting xinet seem to help.

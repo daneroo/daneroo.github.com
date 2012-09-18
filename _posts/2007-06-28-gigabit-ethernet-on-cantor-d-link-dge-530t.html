@@ -1,9 +1,0 @@
---- 
-name: gigabit-ethernet-on-cantor-d-link-dge-530t
-layout: post
-title: "Gigabit Ethernet on Cantor: D-Link DGE-530T"
-time: 2007-06-28 05:35:00.002000 -04:00
-tags: []
-
----
-Under Centos4.4 my notes indicate that the SKGE module was the right one...<br /><br />Installing the Gigabit Ethernet Controller under RHEL5 was without issue, and produced the following /etc/modprobe.conf:<br /><blockquote>[root@cantor ~]# more /etc/modprobe.conf<br />alias eth0 r8169<br />alias eth1 forcedeth<br />...</blockquote>This is what lspci had to say:<br /><blockquote>[root@cantor ~]# lspci<br />01:09.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL-8169 Gigabit Ethernet (rev 10)<br /></blockquote>

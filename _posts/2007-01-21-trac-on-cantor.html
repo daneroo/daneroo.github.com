@@ -1,9 +1,0 @@
---- 
-name: trac-on-cantor
-layout: post
-title: Trac on cantor
-time: 2007-01-21 03:01:00.002000 -05:00
-tags: []
-
----
-Installing trac on cantor<br />Decided to up2date instead of yum<br />http://trac.edgewall.org/wiki/TracOnRhel4<br /><pre class="wiki"  style="font-family:courier new;">Change the directories from instructions:<br />Subversion repos<br /><span style="font-weight: bold;">mkdir -p /var/lib/subversion/repos</span><br /><span style="font-weight: bold;">svnadmin create  --fs-type fsfs /var/lib/subversion/repos</span><br />Trac projects.<br /><span style="font-weight: bold;">mkdir -p  /var/lib/</span><span style="font-weight: bold;" class="searchword0">trac<br />trac</span><span style="font-weight: bold;">-admin /var/lib/</span><span style="font-weight: bold;" class="searchword0">trac</span><span style="font-weight: bold;">/solotrac initenv</span><br /></pre>permissions, root.apache didn't cut it...<br />chown -R apache:apache /var/lib/trac<br />chown -R apache:apache /var/lib/subversion/repos<br /><br />and put a logo into /usr/share/trac/htdocs/sologlobe.png by changing /var/lib/trac/solotrac/conf/trac.ini<br /><br />for i in CONFIG_VIEW MILESTONE_ADMIN MILESTONE_CREATE MILESTONE_DELETE MILESTONE_MODIFY REPORT_ADMIN REPORT_CREATE REPORT_DELETE REPORT_MODIFY REPORT_VIEW ROADMAP_ADMIN ROADMAP_VIEW SEARCH_VIEW TICKET_ADMIN TICKET_APPEND TICKET_CHGPROP TICKET_CREATE TICKET_MODIFY TICKET_VIEW TIMELINE_VIEW TRAC_ADMIN WIKI_ADMIN WIKI_CREATE WIKI_DELETE WIKI_MODIFY WIKI_VIEW; do trac-admin solotrac<br /><br />Then we svn,<br />And define milestones for hibernate and clustering unit/integration/load testing...

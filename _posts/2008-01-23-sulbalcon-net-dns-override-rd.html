@@ -1,9 +1,0 @@
---- 
-name: sulbalcon-net-dns-override-rd
-layout: post
-title: sulbalcon.net DNS override @rd
-time: 2008-01-23 13:23:00.002000 -05:00
-tags: []
-
----
-To override dns for sulbalcon.net, which does not do port forwarding when coming from the inside, simply added a line to /etc/hosts on openwrt@rd<br /><br />The point was to browse to sulbalcon.net from inside rd.sologlobe.com network<br />Of course the browsing host has to use openwrt as its dns...<br /><br /><span style="font-weight: bold; font-family: courier new;font-size:85%;" >/etc/hosts.old -> /rom/etc/hosts<br />/etc/hosts<br />127.0.0.1 localhost OpenWrt<br />192.168.3.200 sulbalcon.net www.sulbalcon.net sulbalcon<br /><br /></span><span style="font-family: courier new; font-weight: bold;font-size:85%;" >dig before</span><span style="font-weight: bold; font-family: courier new;font-size:85%;" ><br /></span><span style="font-family: courier new;font-size:85%;" >sulbalcon.net.          244     IN      CNAME   rd-sologlobe.dnsalias.net.<br />rd-sologlobe.dnsalias.net. 60   IN      A       74.56.226.92<br /></span><span style="font-family: courier new; font-weight: bold;font-size:85%;" >dig after</span><span style="font-weight: bold; font-family: courier new;font-size:85%;" ><br /></span><span style="font-family: courier new;font-size:85%;" >sulbalcon.net.          0       IN      A       192.168.3.200<br /></span><span style="font-weight: bold; font-family: courier new;font-size:85%;" ><br /></span>

@@ -1,9 +1,0 @@
---- 
-name: rpc-options
-layout: post
-title: RPC options
-time: 2006-07-17 09:32:00.002000 -04:00
-tags: []
-
----
-Results:<br />  Basic transport is workable now.<br />  For initial tests php-o-lait will be simpler, (requires php 4.3 (.1)+ (not boole)<br /><br />JSON-RPC<br />Server side - <br />  JSON.php wrapped by me<br />  php-o-lait includes JSON.php , and rpcproxy classes<br />  json-rpc-java-1.0<br /><br />Client side<br />  php-o-lait rpcproxy classes<br />  Hand written code in HttpPostTest<br />    including cookie tracking.<br /><br />Impedence mismatch: Types!<br />  If php is in the chain, whoe dow we adapt the class hinting scheme from java client:<br />     remove it from the source by hand ?<br />     Implement Objects in php ?<br /><br />Other transports:<br />  REST, XMLRPC, SOAP<br />  JAX-RPC -> supplanted by  JAX-WS 2.0 (which supplants JAX-RPC), JAXB 2.0, and SAAJ 1.3.<br /><br />What about http://xins.sourceforge.net/<br />  handles all three: REST, XMLRPC, SOAP<br /><br />for xmlrpc :<br />  implementation list : http://www.xmlrpc.com/directory/1568/implementations<br />  top candidates for java:<br />    http://ws.apache.org/ or http://ws.apache.org/xmlrpc/index.html<br />    http://xmlrpc.sourceforge.net/ (redstone , was Marquée)<br />  top candidates for php: not yet reviewed<br />    There is already a module in php :php-xmlrpc (on euler,abel,rack2)<br />       article describing this extension :<br />       http://www.devshed.com/c/a/PHP/Using-XMLRPC-with-PHP/<br />         this is the xlmrpc-epi (epinions extension)<br />    http://keithdevens.com/software/xmlrpc<br />    http://scripts.incutio.com/xmlrpc/<br />    http://phpxmlrpc.sourceforge.net/ (has some json stuff too, had trouble making it work ?)<br />      but maybe that was on boole)

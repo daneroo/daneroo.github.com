@@ -1,9 +1,0 @@
---- 
-name: d-link-dge-530t-10-100-1000-gigabit-ethernet
-layout: post
-title: D-Link DGE-530T 10/100/1000 Gigabit Ethernet
-time: 2006-10-28 00:39:00.002000 -04:00
-tags: []
-
----
-How to install D-Link DGE-530T 10/100/1000 Gigabit Ethernet driver<br />on CentOS-4.4<br /><br />/Linux driver/install-8_23.tar.bz2 from CD in D-Link box,<br />note: there is also a half-height bracket in the box.<br /><br />make sure the link<br />ln -s ... /usr/src/linux is ok, especially if a new kernel is installed<br />When I built the driver :<br /><span style="font-family: courier new;">ls -ltrd /usr/src/linux</span><br /><span style="font-family: courier new;">lrwxrwxrwx  1 root root 37 Oct 27 21:26 /usr/src/linux -> /usr/src/kernels/2.6.9-42.0.3.EL-i686</span><br /><br />/etc/modeprobe.conf - replace sky2 driver with installed sk98lin<br /><span style="font-family: courier new;">...</span><br /><span style="font-family: courier new;">alias eth0 forcedeth</span><br /><span style="font-family: courier new;">alias eth1 sk98lin</span><br /><br /><span style="font-weight: bold;">Quoted from:</span><br /><blockquote>http://www.phoronix.com/lch/?k=entry&l=53&amp;t=D-Link%20DGE-530T%2010/100/1000<br />I installed the sk98lin driver in the supplied CDROM.<br /><br />I followed the installation instructions in the README file in /Linux driver/install-8_23.tar.bz2. I did not follow the procedure in /Linux driver/sk98lin.txt - I suspect that is for an older driver version.<br /><br />I loaded the driver module and it worked first time.</blockquote>
