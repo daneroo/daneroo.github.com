@@ -6,7 +6,7 @@ description: "Portfolio and Blog"
 
 auto: false
 source: .
-paginate: 10
+#paginate: 10
 #paginate_file: blog.html
 
 permalink: /:year/:month/:title
@@ -16,7 +16,6 @@ pygments: true
 
 exclude:
   - README.md
-  - _drafts
   - Rakefile
   - import
   - initializr
