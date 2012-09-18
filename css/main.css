@@ -234,6 +234,9 @@ opacity: .25;
   }
 }
 
+.banner-img {
+  background:#333;
+}
 /* typography */
 .subsection {
 	color: #08C;
