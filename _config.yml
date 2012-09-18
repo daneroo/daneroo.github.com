@@ -17,5 +17,3 @@ pygments: true
 exclude:
   - README.md
   - Rakefile
-  - import
-  - initializr
