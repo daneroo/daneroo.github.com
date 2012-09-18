@@ -14,7 +14,8 @@
     open -a Google\ Chrome.app  http://localhost:4000
 
 # DNS
- TLD and www is pointed to [gihub pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
+ TLD and www is pointed to [gihub pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages).  
+ So is onehundredhellos.daniel-lauzon.com.
 
 ## TODO
 
@@ -46,29 +47,6 @@
     # if rubygems<1.3.7 -- gem update --system
     gem install jekyll
     gem install rdiscount
-
-#### Pagination 
-
-    # if you need to paginate more than one file,
-    # or a file other than index.html: blog.html for us
-    gem install jekyll-pagination
-    # and add to _plugins/ext.rb
-    require 'jekyll/pagination'
-
-#### Syntax highlighting (python)
-
-    easy_install Pygments
-
-In your `_config.yml` file put the following so you don’t have to specify the flag: `--pygments`
-
-    pygments: true
-
-To generates the style sheet, and make the rules specific to .highlight class:
-
-    pygmentize -f html -S default -a .highlight > css/pygments.css
-    
-See [this article](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html) for interaction between bootstrap and css.
-
 
 ## History
 **2012** The site has been redone with bootstrap (responsive). (2.1)
