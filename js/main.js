@@ -13,10 +13,6 @@
             $('ul.nav li').removeClass('active');
             $('ul.nav li a[href="/portfolio"]').parent().addClass('active');
         }
-        if ($t.match(/Home/)){
-            $('ul.nav li').removeClass('active');
-            $('ul.nav li a[href="/home"]').parent().addClass('active');
-        }
     });
 
     function setupOrientationHandler(){
