@@ -13,11 +13,12 @@
     open http://localhost:4000
     open -a Google\ Chrome.app  http://localhost:4000
 
-#DNS
+# DNS
  TLD and www is pointed to [gihub pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
+
 ## TODO
 
-* highlight correct entry in navbar
+* assets: logo solo,axial,eko,macadamian,mw,ojs,gat-ouv ; node.js,javascript,ec2,chef,html5,git/hub
 * Move to less for bootstrap and customization
 * how about a build script
 * a qr code (zxing+color)
@@ -36,8 +37,9 @@
 *   robots.txt
 *   sitemap.xml (+gogle ping)
 * <strike>move to daniel-lauzon.com</strike>
-*   <strike>landing page</strike>
-*   <strike>get a favicon.ico</strike>
+* <strike>landing page</strike>
+* <strike>get a favicon.ico</strike>
+* <strike>highlight correct entry in navbar</strike>
 
 ### Install requirements:
 
