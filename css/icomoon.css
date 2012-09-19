@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-facebook:before {
+	content: "\46";
+}
+.icon-twitter:before {
+	content: "\54";
+}
+.icon-feed:before {
+	content: "\52";
+}
+.icon-github:before {
+	content: "\68";
+}
+.icon-google-plus:before {
+	content: "\47";
+}
+.icon-google-plus-2:before {
+	content: "\67";
+}
+.icon-facebook-2:before {
+	content: "\66";
+}
+.icon-twitter-2:before {
+	content: "\74";
+}
+.icon-feed-2:before {
+	content: "\72";
+}
+.icon-skype:before {
+	content: "\73";
+}
+.icon-linkedin:before {
+	content: "\6c";
+}
+.icon-mail:before {
+	content: "\6d";
+}
