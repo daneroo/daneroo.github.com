@@ -5,7 +5,13 @@
 Author's custom styles
 ========================================================================== 
 */
+body {
+	background-image: url('../img/wall4.png'); 
+}
 
+.white {
+	background: #fff;
+}
 .navbar .nav > li > a { /*squeeze navbar to fit 320px h-padding 15->7 */
   padding: 10px 7px 10px;
 }

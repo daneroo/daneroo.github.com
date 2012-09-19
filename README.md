@@ -19,6 +19,7 @@
 
 ## TODO
 
+* bg: http://subtlepatterns.com/wall-4-light/
 * assets: logo solo,axial,eko,macadamian,mw,ojs,gat-ouv ; node.js,javascript,ec2,chef,html5,git/hub
 * Move to less for bootstrap and customization
 * how about a build script
