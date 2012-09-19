@@ -32,6 +32,7 @@ p.vspace { /*vertical spacing for hero <p>*/
   padding-top:8px;
 }
 #danhero {
+	margin-bottom: 10px;
   padding:35px; /*override hero-unit padding*/
 
   background-repeat: no-repeat;
@@ -88,25 +89,6 @@ article.post header {
   border-radius: 5px;
   padding-left:10px;
 }
-
-
-/*@media (min-width: 768px) {
-  .dl-sidenav {
-    width: 130px;
-    margin-top: 20px;
-    position: fixed;
-    top: 120px;
-  }
-}
-.dl-sidenav .icon-chevron-right {
-float: right;
-margin-top: 2px;
-margin-right: -6px;
-opacity: .25;
-}
-*/
-
-
 
 /* Sidenav for Docs (taken from boostrap bs-docs-sidenav)
 -------------------------------------------------- */
