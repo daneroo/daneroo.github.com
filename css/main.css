@@ -33,6 +33,7 @@ body {
 }
 #danhero p { /*reset hero>p spacing*/
   margin: 0 0 2px;
+  font-size: 16px;
   line-height: 20px;
 }
 p.vspace { /*vertical spacing for hero <p>*/
