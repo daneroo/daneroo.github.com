@@ -16,15 +16,16 @@ body {
   padding: 10px 7px 10px;
 }
 
-#NOTUSED {  /*css gradient used as hero background*/  
-background-color: #2699ff; /* Old browsers */
-background: -moz-linear-gradient(top,  hsl(208,100%,51%) 0%, hsl(208,100%,81%) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsl(208,100%,51%)), color-stop(100%,hsl(208,100%,81%))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  hsl(208,100%,51%) 0%,hsl(208,100%,81%) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  hsl(208,100%,51%) 0%,hsl(208,100%,81%) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  hsl(208,100%,51%) 0%,hsl(208,100%,81%) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  hsl(208,100%,51%) 0%,hsl(208,100%,81%) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2699ff', endColorstr='#7fc3ff',GradientType=0 ); /* IE6-9 */
+.thumbnail h3 {
+  margin-top: -0.7em;
+  margin-bottom: 0px;
+}
+.thumbnail h3 span {
+  background-color:#ccc;
+  color:#555;
+  padding:0 10px 0 10px;
+/*  border: 1px solid rgba(0, 0, 0, 0.0976563);*/
+  border-radius: 4px;
 }
 
 #danhero .btn { /* space down the action btn */
@@ -111,14 +112,17 @@ article.post header {
      -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
           box-shadow: 0 1px 4px rgba(0,0,0,.065);
 }
-.dl-sidenav > li > a {
+.dl-sidenav > li > a, .dl-sidenav > li.nav-header {
   display: block;
   *width: 190px;
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
 }
-.dl-sidenav > li:nth-child(2) > a {
+.dl-sidenav > li.nav-header {
+  color:#777;
+  font-size:inherit;
+/*  text-transform:none;*/
   -webkit-border-radius: 6px 6px 0 0;
      -moz-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
@@ -157,7 +161,7 @@ article.post header {
   opacity: 1;
 }
 .dl-sidenav.affix {
-  top: 40px;
+  top: 50px;
 }
 .dl-sidenav.affix-bottom {
   position: absolute;
