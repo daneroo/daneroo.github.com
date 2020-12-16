@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/daniellauzon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://daniel-lauzon.com
+  * I am daniellauzon (https://keybase.io/daniellauzon) on keybase.
+  * I have a public key ASBnq6uXZVU_EEV3SA_JhaEm9TfLHGaredQ1tBSSplQrSwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120217c24d2bab14e9ac1d71977957d5f98917e4ee1d51a0bc3140cc0e1251be8620a",
+      "host": "keybase.io",
+      "kid": "012067abab9765553f104577480fc985a126f537cb1c66ab79d435b41492a6542b4b0a",
+      "uid": "07efb2dca2e6be87827f7031e816e419",
+      "username": "daniellauzon"
+    },
+    "merkle_root": {
+      "ctime": 1608159799,
+      "hash": "13d5cd264fbe8a1315eb12bd79810ccf3bf0e7505b375c8bfc91fac541e156d3395db0bb64889c88a15ddba55a5df5cbad58f4cf148a05825eddaccabb72e3fd",
+      "hash_meta": "f3370f92c64d3d395f3a0d7345f1efcbfcfc4247c52d2ec06c286b5fef56c7ec",
+      "seqno": 18422676
+    },
+    "service": {
+      "entropy": "6i4WoJaCM/qDlK1TsHTfb5+D",
+      "hostname": "daniel-lauzon.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1608159866,
+  "expire_in": 504576000,
+  "prev": "f692c6dc02f9445f2fdf21bbd793ed3f82d20cb60a919fe87752883ebd0a6c89",
+  "seqno": 50,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZ6url2VVPxBFd0gPyYWhJvU3yxxmq3nUNbQUkqZUK0sKp3BheWxvYWTESpcCMsQg9pLG3AL5RF8v3yG715PtP4LSDLYKkZ/od1KIPr0KbInEIGXWpQE4VMoiD/ZTloOhf/MFdd2cEjGEPOBY3Sb+ywPHAgHCo3NpZ8RAelzB4naecMP5BjCBupTSGWyue5jSco9HdqGLchOlSWEXb+CXLuLNhw2mTF3zHH0x71tdehTWt7U5uk/TQKsgA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP14Oy6/LBfhTqpNV9ZzRP6NFzGACOXrJR+ibEUwtVD1o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/daniellauzon
+
+==================================================================
