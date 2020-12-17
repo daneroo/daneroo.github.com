@@ -11,7 +11,8 @@ source: .
 
 permalink: /:year/:month/:title
 
-markdown: rdiscount
+# Replaced rdiscount because of deprecation
+markdown: GFM
 
 exclude:
   - README.md
